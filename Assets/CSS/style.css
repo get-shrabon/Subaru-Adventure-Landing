@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+/* ROOT STYLE */
+.border-right {
+  border-right: 1px solid #fff;
+}
+.btn-close{
+    background-image: unset !important;
+}
+/*********************** Header Style Here ****************************/
+header, .offcanvas-body, .offcanvas-header {
+  background: #1c6dd2;
+  color: white;
+}
+.nav_brand {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+.nav-link {
+  color: white !important;
+}
+.nav__search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.nav__search button,
+input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: fit-content;
+}
+.nav__search input::placeholder {
+  color: white;
+  letter-spacing: 0.4px;
+}
+.nav__search input:focus{
+    outline: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+/***************************** Header Style End **************************/
+
+
+
+/*********************************************** Responsive All CSS Here *****************************************************/
+
+@media screen and (max-width:576px) {
+    .sm-d-none{
+        display: none;
+    }
+    .nav__search{
+        padding: 10px 10px !important;
+        width: fit-content;
+    }
+    nav .border-right{
+        border: none;
+        padding: 0 !important;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .sm-d-none{
+        display: none;
+    }
+    .nav__search{
+        padding: 10px 10px !important;
+        width: fit-content;
+    }
+        nav .border-right{
+        border: none;
+        padding: 0 !important;
+    }
+}
