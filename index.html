@@ -27,7 +27,7 @@
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-           <span><i class="fa-solid fa-bars-staggered"></i></span>
+            <span><i class="fa-solid fa-bars-staggered"></i></span>
           </button>
           <div
             class="offcanvas offcanvas-start"
@@ -44,7 +44,9 @@
                 class="btn-close text-white"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
-              ><i class="fa-solid fa-xmark fa-1xl"></i></button>
+              >
+                <i class="fa-solid fa-xmark fa-1xl"></i>
+              </button>
             </div>
             <div
               class="offcanvas-body justify-content-between align-items-center"
@@ -53,18 +55,28 @@
                 <li class="nav-item nav_brand sm-d-none">Adventure Subaru</li>
               </ul>
               <div>
-                 <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-2" href="#"><span><i class="fa-solid fa-location-dot"></i></span> 777 Jhon Rd. Troy, MI 48083</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-2" href="tel:248 918 0681"><span><i class="fa-solid fa-phone"></i></span> 248 918 0681</a>
-                </li>
-                <div class="nav__search ms-2">
-                    <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input type="text" placeholder="Search Inventory">
-                </div>
-              </ul>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#"
+                      ><span><i class="fa-solid fa-location-dot"></i></span> 777
+                      Jhon Rd. Troy, MI 48083</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex align-items-center gap-2"
+                      href="tel:248 918 0681"
+                      ><span><i class="fa-solid fa-phone"></i></span> 248 918
+                      0681</a
+                    >
+                  </li>
+                  <div class="nav__search ms-2">
+                    <button type="button">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" placeholder="Search Inventory" />
+                  </div>
+                </ul>
               </div>
             </div>
           </div>
@@ -72,6 +84,69 @@
       </nav>
     </header>
 
+    <main>
+      <!------------------------------------------- Hero Container Here-------------------------------------- -->
+      <section class="hero__container noReapet_cover_center">
+        <div class="container">
+          <div class="hero__content row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+              <div class="h-100 position-relative">
+                <img
+                  class="position-relative"
+                  id="main-image"
+                  src="./Assets/Images/heroCar.png"
+                  alt="image1"
+                />
+                <h4 class="text-white slider__text">
+                  Available Sync3 / Apple Car / Android auto
+                </h4>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="bg-white p-3 h-100">
+                <div id="thumbnail-container">
+                  <div class="slide__box border-bottom">
+                    <img
+                      class="thumbnail"
+                      src="./Assets/Images/introduction.png"
+                      alt="image1"
+                    />
+                    <h4>Introduction</h4>
+                  </div>
+                  <div class="slide__box border-bottom">
+                    <img
+                      class="thumbnail"
+                      src="./Assets/Images/lariuat.png"
+                      alt="image1"
+                    />
+                    <h4>2020 F-150 LARIAT</h4>
+                  </div>
+                  <div class="slide__box">
+                    <img
+                      class="thumbnail"
+                      src="./Assets/Images/comparision.png"
+                      alt="image1"
+                    />
+                    <h4>Comparision</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------- Hero Container End-------------------------------------- -->
+    </main>
+    <script src="./Assets/js/custom.js"></script>
+    <script>
+      var thumbnails = document.querySelectorAll(".thumbnail");
+      var mainImage = document.querySelector("#main-image");
+      for (var i = 0; i < thumbnails.length; i++) {
+        thumbnails[i].addEventListener("click", function () {
+          mainImage.src = this.src;
+        });
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

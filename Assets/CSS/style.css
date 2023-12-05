@@ -13,11 +13,18 @@ body {
 .border-right {
   border-right: 1px solid #fff;
 }
-.btn-close{
-    background-image: unset !important;
+.btn-close {
+  background-image: unset !important;
+}
+.noReapet_cover_center {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*********************** Header Style Here ****************************/
-header, .offcanvas-body, .offcanvas-header {
+header,
+.offcanvas-body,
+.offcanvas-header {
   background: #1c6dd2;
   color: white;
 }
@@ -48,41 +55,91 @@ input {
   color: white;
   letter-spacing: 0.4px;
 }
-.nav__search input:focus{
-    outline: none;
+.nav__search input:focus {
+  outline: none;
 }
-.navbar-toggler:focus{
-    box-shadow: none !important;
+.navbar-toggler:focus {
+  box-shadow: none !important;
 }
 /***************************** Header Style End **************************/
 
+/***************************** Hero Container Style Start **************************/
+.hero__container {
+  padding: 50px 0;
+  background-image: linear-gradient(to right, #05164cee, #2173d1dd),
+    url("../Images/HeroBG.png");
+}
+.car__bg {
+  background-image: url("../Images/heroCar.png");
+}
 
+#main-image {
+  width: 100% !important;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+#thumbnail-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.thumbnail {
+  width: 100px;
+  height: 100px;
+}
+.thumbnail:hover {
+  opacity: 0.7;
+}
+.slider__text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border-bottom{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.453);
+}
+.slide__box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 0;
+}
+.activeBox{
+    background-color: #1c6dd2;
+}
+/***************************** Hero Container Style End **************************/
 
 /*********************************************** Responsive All CSS Here *****************************************************/
 
-@media screen and (max-width:576px) {
-    .sm-d-none{
-        display: none;
-    }
-    .nav__search{
-        padding: 10px 10px !important;
-        width: fit-content;
-    }
-    nav .border-right{
-        border: none;
-        padding: 0 !important;
-    }
+@media screen and (max-width: 576px) {
+  .sm-d-none {
+    display: none;
+  }
+  .nav__search {
+    padding: 10px 10px !important;
+    width: fit-content;
+  }
+  nav .border-right {
+    border: none;
+    padding: 0 !important;
+  }
 }
-@media screen and (min-width:577px) and (max-width:992px) {
-    .sm-d-none{
-        display: none;
-    }
-    .nav__search{
-        padding: 10px 10px !important;
-        width: fit-content;
-    }
-        nav .border-right{
-        border: none;
-        padding: 0 !important;
-    }
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .sm-d-none {
+    display: none;
+  }
+  .nav__search {
+    padding: 10px 10px !important;
+    width: fit-content;
+  }
+  nav .border-right {
+    border: none;
+    padding: 0 !important;
+  }
 }
