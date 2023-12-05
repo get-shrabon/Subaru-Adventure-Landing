@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
   padding: 0;
@@ -20,6 +20,45 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.primary__color {
+  color: #2174d1;
+}
+.secondary__color {
+  color: #616161;
+}
+.f__20 {
+  font-size: 20px;
+}
+.primary__btn {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  background-color: #1c6dd2;
+  color: white;
+  transition: 0.3s all;
+  border: none;
+  font-size: 28px;
+  font-weight: 800;
+  border-radius: 8px;
+  letter-spacing: 1.4px;
+  padding: 13px 0;
+}
+.primary__btn:hover {
+  background-color: #0e58b3;
+}
+.secondary__btn {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  color: #1c6dd2;
+  transition: 0.3s all;
+  border: 1px solid #1c6dd2;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 8px;
+  letter-spacing: 1.4px;
+  padding: 13px 0;
 }
 /*********************** Header Style Here ****************************/
 header,
@@ -66,7 +105,7 @@ input {
 /***************************** Hero Container Style Start **************************/
 .hero__container {
   padding: 50px 0;
-  background-image: linear-gradient(to right, #05164cee, #2173d1dd),
+  background-image: linear-gradient(to right, #05164cee, #2173d18d),
     url("../Images/HeroBG.png");
 }
 .car__bg {
@@ -100,8 +139,8 @@ input {
   justify-content: center;
   align-items: center;
 }
-.border-bottom{
-    border-bottom: 1px solid rgba(128, 128, 128, 0.453);
+.border-bottom {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.453);
 }
 .slide__box {
   display: flex;
@@ -109,11 +148,80 @@ input {
   gap: 10px;
   cursor: pointer;
   padding: 10px 0;
+  color: #616161;
 }
-.activeBox{
-    color: #1c6dd2;
+.slide__box h4 {
+  font-size: 20px;
+}
+.activeBox {
+  color: #1c6dd2;
 }
 /***************************** Hero Container Style End **************************/
+/***************************** Offer Container Style Start **************************/
+.offer__title {
+  color: #21346b;
+  font-size: 40px;
+  font-weight: 800;
+}
+.offer__price {
+  color: #2174d1;
+  font-family: Poppins;
+  font-size: 65px;
+  font-weight: 800;
+  text-align: center;
+  border-radius: 12px;
+  background: #f1f1f5;
+  width: 100%;
+}
+.price__des {
+  font-size: 12px;
+  text-align: center;
+}
+.offer__container {
+  position: relative;
+  margin-bottom: -150px;
+  box-shadow: 2px 2px 46px 19px rgba(18, 15, 36, 0.2);
+}
+/***************************** Offer Container Style End **************************/
+
+/***************************** Prices Container Style Start **************************/
+.prices__container {
+  background-image: url("../Images/mainSectionBG.png");
+  padding: 200px 0px 164px 0px;
+}
+.prices__container .border-right {
+  border-color: #21346b82;
+}
+.Discount__title {
+  color: #21346b;
+  font-size: 35px;
+  font-weight: 700;
+}
+.package__name {
+  color: #21346b;
+  font-size: 22px;
+  font-weight: 600;
+}
+.price__amount {
+  color: #2174d1;
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 800;
+}
+.logo img {
+  width: 150px !important;
+}
+/***************************** Prices Container Style End **************************/
+
+/***************************** Footer Style Start **************************/
+footer {
+  background-color: #1e1e1e;
+  padding: 25px 0;
+}
+footer a {
+  color: white;
+}
+/***************************** Footer Style End **************************/
 
 /*********************************************** Responsive All CSS Here *****************************************************/
 
@@ -129,6 +237,24 @@ input {
     border: none;
     padding: 0 !important;
   }
+  .logo img {
+    width: unset !important;
+  }
+  .footer__contents {
+    flex-direction: column !important;
+    justify-content: center;
+  }
+  .footer__links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .row {
+    gap: 15px !important;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .sm-d-none {
@@ -141,5 +267,27 @@ input {
   nav .border-right {
     border: none;
     padding: 0 !important;
+  }
+  .slide__box h4 {
+    font-size: 14px;
+  }
+  .primary__btn {
+    font-size: 16px;
+  }
+  .secondary__btn {
+    font-size: 12px;
+  }
+  .offer__title {
+    font-size: 20px;
+  }
+  .offer__price {
+    font-size: 30px;
+  }
+  .prices__container p {
+    font-size: 16px;
+  }
+  .footer__links a {
+    font-size: 10px !important;
+    white-space: nowrap;
   }
 }
