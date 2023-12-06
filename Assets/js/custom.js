@@ -9,6 +9,8 @@ for (let i = 0; i < slideBox.length; i++) {
     }
   });
 }
+
+
 var thumbnails = document.querySelectorAll(".thumbnail");
 var mainImage = document.querySelector("#main-image");
 for (var i = 0; i < thumbnails.length; i++) {
