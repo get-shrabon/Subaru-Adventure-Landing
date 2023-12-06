@@ -38,7 +38,7 @@ body {
   color: white;
   transition: 0.3s all;
   border: none;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 800;
   border-radius: 8px;
   letter-spacing: 1.4px;
@@ -54,7 +54,7 @@ body {
   color: #1c6dd2;
   transition: 0.3s all;
   border: 1px solid #1c6dd2;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 800;
   border-radius: 8px;
   letter-spacing: 1.4px;
@@ -166,7 +166,7 @@ input {
 .offer__price {
   color: #2174d1;
   font-family: Poppins;
-  font-size: 65px;
+  font-size: 45px;
   font-weight: 800;
   text-align: center;
   border-radius: 12px;
@@ -205,7 +205,7 @@ input {
 .price__amount {
   color: #2174d1;
   font-family: Poppins;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 800;
 }
 .logo img {
@@ -238,7 +238,7 @@ footer a {
     padding: 0 !important;
   }
   .logo img {
-    width: unset !important;
+    width: 100px !important;
   }
   .footer__contents {
     flex-direction: column !important;
@@ -252,8 +252,14 @@ footer a {
     text-align: center;
     margin-bottom: 20px;
   }
+  .logos__container .row>*{
+width: inherit !important;
+  }
   .row {
     gap: 15px !important;
+  }
+  .slider__text{
+    padding: 20px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -284,10 +290,16 @@ footer a {
     font-size: 30px;
   }
   .prices__container p {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .prices__container .px-5 {
+    padding: 10px !important;
   }
   .footer__links a {
     font-size: 10px !important;
     white-space: nowrap;
   }
+  /* .price__box .px-5{
+    padding: 10px !important;
+  } */
 }
